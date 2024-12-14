@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no HTML</title>
+</head>
+<body>
+    <main>
+
+        <h1>Tabelas no HTML</h1>
+
+
+        <section id="students">
+            <h2>Tabela de alunos</h2>
+
+            <table border="2">
+
+                <thead> <!-- Primeira linha principal da tabela - cabeçalho -->
+                    <tr> <!-- tr criar a linha -->
+                        <th>Nome</th> <!-- th é utilizado apenas para o thead, linha principal com os títulos das colunas -->
+                        <th>E-mail</th>
+                        <th>Matrícula</th> <!-- th criar a coluna -->
+                    </tr>
+                </thead>
+
+
+                <tbody> <!-- restante das linhas, ou seja, o corpo de conteúdo das tabelas -->
+                <tr>
+                    <td>Felipe</td> <!-- th é usado em thead, td é usado em tbody, os dois tem o mesmo objetivo -->
+                    <td>felipe.agomes000@gmail.com</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Julio</td>
+                    <td>juliolima000@mail.com</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>Ricardo</td>
+                    <td>ricardosilva000@gmail.com</td>
+                    <td>3</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="finance">
+            <h2>Tabela de controle financeiro</h2>
+
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td rowspan="2">15/06/2022</td>
+                        <td colspan="2">Despesa</td>
+                        <td>35,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Receita</td>
+                        <td>Salário</td>
+                        <td>3.768,00</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+</html>
