@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(255, 138, 29);
+    font-size: 9.6rem;
+    font-weight: 900; /* É basicamente a grossura da fonte */
+    font-style: oblique;
+    text-decoration: underline; /* é o traço abaixo da fonte */
+    text-transform: capitalize; /* aqui defino se será tudo maíscula, minúscula, só a primeira letra... */
+    text-align: center;
+    font-family: "Comic Neue", cursive;
+}
+
+h2 {
+    font-size: 6.4rem;
+}
+
+.bg { /* selecionamos a classe da div */
+    height: 500px;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    background-image: url(https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* mesmo rolando a página, o cabeçalho/foto se mantém fixa */
+
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-indent: 90px;
+}

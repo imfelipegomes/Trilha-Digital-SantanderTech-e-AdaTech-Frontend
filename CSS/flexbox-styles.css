@@ -1,0 +1,13 @@
+.box {
+    flex: 30%;
+    height: 10rem;
+    width: 20rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: blue;
+    color: #fff;
+    border: 10px solid red;
+    display: inline-block;
+    border-radius: 0.4rem;
+    position: static;
+}
