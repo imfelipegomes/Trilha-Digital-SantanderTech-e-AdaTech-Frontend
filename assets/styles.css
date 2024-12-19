@@ -29,6 +29,8 @@ aside {
 
 :root {
     font-size: 62.5%;
+    --default-border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    --default-border-radius: 1.2rem;
 }
 
 aside h1 {
@@ -44,15 +46,16 @@ aside h1 span, main h2 span {
 main {
     width: 60rem;
     height: 52rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border: var(--default-border);
     padding: 4.4rem 5.7rem;
-    border-radius: 1.2rem;
+    border-radius: var(--default-border-radius);
+    position: relative;
 }
 
 main h2 {
     max-width: 43rem;
     font-size: 3.6rem;
-    font-weight: 500
+    font-weight: 500;
 }
 
 main .actions {
@@ -61,13 +64,12 @@ main .actions {
 }
 
 main .actions a {
-    border-radius: 1.2rem;
+    border-radius: var(--default-border-radius);
     text-decoration: none;
     font-size: 2.4rem;
     height: 5.5rem;
     background-color: #35e6e9;
     color: #fff;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +79,17 @@ main .actions a {
 main .actions a + a {
     background-color: #ff5678;
     margin-top: 4.8rem;
+}
+
+main header {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+main header i {
+    font-size: 2rem;
+    color: #FF5678;
 }
 
 main footer p {
@@ -91,3 +104,61 @@ main footer a {
     text-align: center;
     color: #000;
 }
+
+main form {
+    margin-top: 1.6rem;
+}
+
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin: 1rem;
+    display: block;
+}
+
+main form input, main form select {
+    width: 489px;
+    height: 5rem;
+    display: block;
+    background: #ffffff;
+    border: var(--default-border);
+    border-radius: var(--default-border-radius);
+}
+
+main form select {
+    appearance: none;
+}
+
+main form .select-div {
+    position: relative;
+}
+
+main form .select-div::after {
+    top: 1.6rem;
+    right: 1.6rem;
+    font-size: 2.2rem;
+    content: '\f107';
+    font-family: 'Font Awesome 6 free';
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    color: #35e6e9;
+}
+
+main form .points {
+    position: relative;
+}
+
+main form input + button {
+    position: absolute;
+    right: -3.8em;
+    top: calc(2.7rem + 2.3rem);
+    background-color: transparent;
+    border: none;
+    color: #35e6e9;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+
