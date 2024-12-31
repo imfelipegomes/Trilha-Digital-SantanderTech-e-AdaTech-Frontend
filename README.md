@@ -1,2 +1,2 @@
 # Trilha-Digital-SantanderTech-e-AdaTech-Frontend
- Uma iniciantiva do Santander Open Academy + ADA Tech para a área de tecnologia, neste caso, estou participando da Trilha Tech em Front-end
+ Uma iniciativa do banco Santander com o Santander Open Academy + ADA Tech para desenvolver habilidades na área da tecnologia, neste caso, estou participando da Trilha Tech em Front-end.
